@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+header {
+    background-color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.brain-icon {
+    color: #8b5cf6;
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 0.5rem;
+}
+
+.user-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 9999px;
+    color: #4b5563;
+}
+
+.icon-button:hover {
+    background-color: #6d91d8;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 0.5rem;
+}
+
+section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #374151;
+}
+
+.dashboard {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.tree {
+    grid-column: 2;
+    grid-row: 2 ;
+}
+
+.chatbot {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.timer {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.music-player {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.tree-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #6b7280;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+}
+
+.chat-input {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+}
+
+.chat-input button {
+    padding: 0.5rem 1rem;
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+
+.timer-display {
+    text-align: center;
+}
+
+#time {
+    font-size: 3rem;
+    font-family: monospace;
+    margin-bottom: 1rem;
+}
+
+#timerButton {
+    padding: 0.5rem 2rem;
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.control-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #4b5563;
+}
+
+.progress-bar {
+    height: 4px;
+    background: #e5e7eb;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 30%;
+    height: 100%;
+    background: #8b5cf6;
+}
